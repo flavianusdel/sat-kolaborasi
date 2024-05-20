@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+<style>
+    body {
+        font-family: 'EB Garamond', serif;
+    }
+    .bg-image {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    .mask a {
+        font-size: 15px;
+    }
+
+    .glow-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffd700; /* Button background color */
+            color: #ffffff; /* Text color */
+            border: 2px solid transparent; /* Transparent border */
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease; /* Smooth transition */
+        }
+        .glow-btn:hover {
+            box-shadow: 0 0 10px 2px rgba(255, 215, 0, 0.7); /* Glow effect on hover */
+        }
+        .custom-navbar {
+            background: rgb(191,137,61);
+            background: radial-gradient(circle, rgba(228,190,93,1) 5%, rgba(218,173,66,1) 19%, rgba(150,116,26,1) 100%);
+            padding: 10px 0; /* Add padding */
+        }
+        .custom-navbar .navbar-brand h4 {
+            font-size: 1.5rem;
+            color: white; /* Change text color to white */
+        }
+        .custom-navbar .navbar-nav .nav-link {
+            color: white; /* Change text color to white */
+            font-size: 1.1rem; /* Adjust font size */
+            margin-right: 15px; /* Add some space between links */
+        }
+        .custom-navbar .navbar-nav .nav-link:hover {
+            color: #ffd700; /* Change hover color */
+        }
+        .dropdown-menu a {
+            color: black;
+        }
+        .dropdown-menu a:hover {
+            color: #ffd700;
+        }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">
+                <img src="assets/logo_serviam.png" style="width: 40px;" alt="Logo Serviam">
+                <h4 class="ms-3">SAT KOLABORASI</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="beranda.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>&#8942;</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="pembimbing.html">About</a></li>
+                            <li><a class="dropdown-item" href="kerajaan_surga.html">Kerajaan Surga</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-image">
+        <div class="mask flip-horizontal" style="background-color: rgba(0, 0, 0, 0.7)"></div>
+        <img src="assets/mataram_kuno_islam_hd.png" class="w-100"/>
+        <div class="mask text-light" style="margin-top: 250px; margin-left: 25%">
+            <h1 class="fw-bolder mb-4">Kerajaan Mataram Islam</h1>
+            <p class="text-start col-md-4 mx-auto">
+                Jelajahi semua tentang Mataram Islam, di mana Anda akan diajak melalui perjalanan sejarah dari awal pembentukannya hingga akhir keruntuhan. Di sini, Anda dapat menemukan analisis mendalam mengenai kehidupan sosial, politik, dan ekonomi kerajaan tersebut, serta biografi mendetail tentang salah satu rajanya yang telah mempengaruhi jalannya sejarah. Lebih lanjut, jelajahi berbagai aspek kehidupan yang berkembang selama era tersebut, termasuk kehidupan politik, sosial, dan ekonomi yang membentuk identitas dari Mataram Islam. Penjelajahan ini juga mencakup peninggalan-peninggalan bersejarah yang masih bisa disaksikan hari ini.
+            </p>
+            <a href="mataram_islam-page1.html" class="glow-btn btn btn-warning mt-5 p-3" style="
+            background: rgb(219,188,3);
+            background: radial-gradient(circle, rgba(219,188,3,1) 0%, rgba(173,132,35,1) 41%, rgba(150,116,26,1) 100%);
+            ">Jelajahi Mataram Islam</a>
+        </div>
+        <div class="mask text-light" style="margin-top: 250px;  margin-left: -25%">
+            <h1 class="fw-bolder mb-4">Kerajaan Mataram Kuno</h1>
+            <p class="text-start col-md-4 mx-auto">
+                Jelajahi semua tentang Mataram Kuno, di mana Anda akan diajak melalui perjalanan sejarah dari awal pembentukannya hingga akhir keruntuhan. Di sini, Anda dapat menemukan analisis mendalam mengenai kehidupan sosial, politik, dan ekonomi kerajaan tersebut, serta biografi mendetail tentang salah satu rajanya yang telah mempengaruhi jalannya sejarah. Lebih lanjut, jelajahi berbagai aspek kehidupan yang berkembang selama era tersebut, termasuk kehidupan politik, sosial, dan ekonomi yang membentuk identitas dari Mataram Kuno. Penjelajahan ini juga mencakup peninggalan-peninggalan bersejarah yang masih bisa disaksikan hari ini.
+            </p>
+            <a href="mk-page1.html" class="glow-btn btn btn-warning mt-5 p-3" style="
+            background: rgb(219,188,3);
+            background: radial-gradient(circle, rgba(219,188,3,1) 0%, rgba(173,132,35,1) 41%, rgba(150,116,26,1) 100%);
+            ">Jelajahi Mataram Kuno</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

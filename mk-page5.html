@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bg-image {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 50vh;
+            overflow: hidden;
+        }
+        
+        .bg-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .bg-image .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .bg-image .title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .bg-image .separator {
+            width: 80%;
+            height: 2px;
+            background-color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .bg-image .location {
+            font-size: 1.5rem;
+        }
+        
+        .article {
+            display: flex;
+            text-align: justify;
+            padding: 50px 150px 0px 150px;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .article-three-img {
+            display: flex;
+            text-align: justify;
+            padding: 50px 150px 0px 150px;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .article-image {
+            transition: 1s;
+            width: 40vw;
+            padding: 0px 50px 0px 50px;
+            height: auto;
+            filter: sepia(100%) brightness(70%);
+        }
+        
+        .article-text {
+            flex: 50%;
+        }
+        
+        .article-images {
+            display: flex;
+            padding-top: 50px;
+        }
+        
+        .article-images img {
+            justify-content: space-evenly;
+            width: 25vw;
+            padding: 0 10px;
+        }
+        
+        .article-image:hover {
+            transition: 1s;
+            filter: none;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .pagination a {
+            margin: 0 5px;
+            padding: 10px 20px;
+            background-color: #f0ad4e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .pagination a:hover {
+            background-color: #ec971f;
+        }
+        
+        /* Adjust paragraph margins to reduce gaps */
+        p {
+            margin: 0 0 1rem 0;  /* Adjust the bottom margin to control spacing between paragraphs */
+        }
+        
+        /* Additional specific styling for paragraphs inside .article and .article-three-img */
+        .article p, .article-three-img p {
+            margin: 0 0 1rem 0;  /* You can further adjust this if needed */
+            padding: 0;  /* Ensure no extra padding is applied */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="
+    background: rgb(191,137,61);
+    background: radial-gradient(circle, rgba(228,190,93,1) 5%, rgba(218,173,66,1) 19%, rgba(150,116,26,1) 100%);">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">
+                <img src="assets/logo_serviam.png" style="width: 40px;" alt="Logo Serviam">
+                <h4 class="ms-3">SAT KOLABORASI</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="beranda.html">Home</a>
+                    </li>
+                <ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="beranda.html">About Us</a>
+                        </li>
+                    <ul>
+        </div>
+    </nav>
+    
+    <div class="bg-image">
+        <img src="assets/kehidupan_ekonomi_mk.png" alt="Background Image">
+        <div class="mask">
+            <div class="title">Kerajaan Mataram Kuno</div>
+            <div class="separator"></div>
+            <div class="location">Yogyakarta, Jawa Tengah</div>
+        </div>
+    </div>
+
+    <!-- imagenya di kanan -->
+    <div class="article">
+        <div class="article-text">
+            <h1>
+                Kehidupan Ekonomi
+            </h1>
+            <p>
+                Wilayah Kerajaan Mataram Kuno dikelilingi pegunungan dan sungai- sungai besar. Hal itu membuatnya memiliki tanah yang subur sehingga cocok untuk kegiatan pertanian.Usaha untuk meningkatkan dan mengembangkan sektor pertanian telah dilakukan sejak masa pemerintahan Rakai Kayuwangi. Sumber ekonomi pada masa ini adalah pertanian. Mata pencaharian utama mereka adalah bertani dan berkebun. Hasil pertanian seperti padi, jagung, dan rempah-rempah menjadi komoditas perdagangan penting. Perdagangan antar negara-negara tetangga seperti india dan tiongkok berlangsung.
+            </p>
+        </div>
+        <img src="assets/mk_ekonomi.png" class="article-image" alt="Mataram Kuno">
+    </div>
+
+    <!-- beberapa image di bawah -->
+    <div class="article-three-img">
+        <div class="article-text">
+            <p>
+                Pada masa pemerintahan Rakai Dyah Balitung (899-911) sektor perdagangan mendapatkan perhatian lebih. Mereka memiliki mata pencaharian di bidang pertanian, perdagangan, kerajinan, dan kesenian. Aktivitas perdagangan dihubungkan melalui Sungai Bengawan Solo. Raja Dyah Balitung membangun pusat-pusat perdagangan di sekitar Sungai Bengawan Solo. Penduduk Mataram Kuno tidak melakukan transaksi perdagangan setiap hari, tetapi hanya di hari-hari pasar yang menjadi hari bertemunya para pedagang dan pembeli. Komoditas pertanian yang diperdagangkan di antaranya beras, hasil bumi, buah-buahan, sirih, hingga mengkudu. Selain memperdagangkan produksi pertanian, masyarakat Mataram Kuno juga berdagang hasil kerajinan tangan, perkakas dari logam, pakaian, gula kelapa, arang, kapur sirih, dan hewan ternak seperti ayam, kambing, itik, dan lembu. Berdasarkan peninggalan sejarah, para sejarawan menduga bahwa perdagangan tidak hanya dilakukan antar desa atau antar wilayah, tetapi juga dengan pihak asing. Pada relief Candi Borobudur peninggalan Kerajaan Mataram Kuno, tertera beberapa kapal layar besar yang bercadik, yang jelas menggambarkan kapal dagang Indonesia. Dari prasasti juga diketahui bahwa pedagang asing daratan Asia Tenggara dan China pernah menetap di Jawa dalam waktu tertentu untuk keperluan dagang. Mereka bertransaksi menggunakan uang dari emas dan perak, meski beberapa berita China juga menyebut adanya sistem barter.
+            </p>
+        </div>
+        <div class="article-images">
+            <img src="assets/mataram_kuno_background.png" class="article-image" alt="Mataram Kuno">
+        </div>
+    </div>
+
+    <div class="article-three-img">
+        <div class="article-text">
+            <h1>
+                Keruntuhan
+            </h1>
+            <p>
+                Keruntuhan Mataram Kuno dimulai setelah kematian Samarattungga. Balaputeradewa, putra Dewi Tara, tidak setuju dengan kepemimpinan Rakai Pikatan sebagai Raja Mataram Kuno. Konflik antara keduanya memaksa Balaputeradewa melarikan diri ke Sumatera dan kemudian mendirikan kerajaan Sriwijaya. Saat itu, Mataram Kuno semakin rentan terhadap serangan Sriwijaya, terutama setelah adanya bencana alam. Mpu Daksa, yang mengklaim sebagai keturunan Sanjaya, mengkudeta Dyah Balitung, yang memperburuk keadaan kerajaan. Akibatnya, Mataram Kuno semakin lemah secara internal dan eksternal. Mpu Sindok, yang menjabat sebagai Rakryan I Hino, memindahkan pusat kerajaan ke Jawa Timur untuk menghindari serangan Sriwijaya. Namun, Sriwijaya terus menyerang hingga akhirnya Mataram Kuno jatuh di tahun 1016 M, sebagaimana yang disebutkan dalam prasasti Pucangan.
+            </p>
+                <div class="article-images">
+                    <img src="assets/mataram_kuno_background.png" class="article-image" alt="Mataram Kuno">
+                </div>
+        </div>
+        
+    </div>
+
+    <div class="pagination">
+        <a id="prev" href="#">&laquo;</a>
+        <a href="mk-page1.html">1</a>
+        <a href="mk-page2.html">2</a>
+        <a href="mk-page3.html">3</a>
+        <a href="mk-page4.html">4</a>
+        <a href="mk-page5.html">5</a>
+        <a id="next" href="#">&raquo;</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const currentPage = parseInt(window.location.pathname.match(/mk-page(\d+)\.html/)[1]);
+            const prevLink = document.getElementById('prev');
+            const nextLink = document.getElementById('next');
+    
+            if (currentPage > 1) {
+                prevLink.href = `mk-page${currentPage - 1}.html`;
+            } else {
+                prevLink.href = '#'; 
+            }
+    
+            if (currentPage < 5) {
+                nextLink.href = `mk-page${currentPage + 1}.html`;
+            } else {
+                nextLink.href = '#'; 
+            }
+        });
+    </script>    
+</body>
+</html>

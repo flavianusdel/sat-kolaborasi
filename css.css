@@ -1,0 +1,78 @@
+body {   /* Remove default margin and padding from the body */
+    margin: 0;
+    padding: 0;
+    background-color: #b3b3b3; /* Warna abu-abu muda */
+}
+
+.top-image { /* Ensure the image fits exactly to the width and has no space around it */
+    width: 100%;
+    display: block; /* This removes the default space/margin below the image */
+    height: auto; /* Keep the image aspect ratio intact */
+    filter: blur(2px); /* Code to Blur */
+    -webkit-filter: blur(2px);
+    filter: brightness(50%)
+}
+.top-image2 { /* Ensure the image fits exactly to the width and has no space around it */
+    width: 100%;
+    display: block; /* This removes the default space/margin below the image */
+    height: auto; /* Keep the image aspect ratio intact */
+}
+
+.textbody{
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    width: 50vw;
+    height: 30vh;
+    transform: translate(-50%,-50%);
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    color: white;
+}
+
+#subjudul{
+    display: flex;
+    justify-content: center;
+    font-size: 1.25vw;
+    color: red;
+}
+
+
+.textbody2{
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    width: 50vw;
+    height: 30vh;
+    transform: translate(-50%,-50%);
+}
+
+#header2{
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    color: white;
+}
+
+#subjudul2{
+    display: flex;
+    justify-content: center;
+    font-size: 1.25vw;
+    color: red;
+}
+
+h1 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+}
+
+p {
+    font-family: "Proxima Nova", serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
+  }
+  
